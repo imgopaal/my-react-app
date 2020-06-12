@@ -7,7 +7,7 @@ jobs:
     steps: 
       - uses: actions/checkout@v2
       - name: Install Node.js
-        uses: actions/checkout@v2-beta
+        uses: actions/setup-node@v2-beta
         with:
           node-version: 12
       
@@ -22,4 +22,4 @@ jobs:
         run: npm install -g surge
         
       - name: Deploy to surge
-        run: surge ./build react-app-by-gopaldaass.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+        run: surge ./build assignment2-by-gopaldas.surge.sh --token ${{ secrets.SURGE_TOKEN }}
