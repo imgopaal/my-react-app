@@ -19,7 +19,7 @@ jobs:
         run: yarn build
         
       - name: Install Surge
-        run: npm install --global surge
+        run: npm install -g surge
         
       - name: Deploy to surge
-        run: surge ./build react-app-by-gopaldas.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+        run: surge ./build react-app-by-gopaldaass.surge.sh --token ${{ secrets.SURGE_TOKEN }}
